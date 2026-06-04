@@ -1,0 +1,46 @@
+# ===== Secrets — must never enter history =====
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+api/.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ===== Node / Next.js (web/ scaffolded at 0.3) =====
+node_modules/
+.next/
+.turbo/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# ===== RAG persistence + source corpus (large, regenerable) =====
+api/chroma_db/
+api/books/
+
+# ===== Editor / IDE / OS noise =====
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ===== Logs =====
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# ===== Private working materials (local-only, not project artifacts) =====
+learning/
+notes/
+CLAUDE.md
+prompts/
+LEARNINGS.md
