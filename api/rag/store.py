@@ -1,6 +1,5 @@
 import chromadb
-
-CHROMA_DB_PATH = "./chroma_db"
+from settings import settings
 
 def get_chroma_client():
-    return chromadb.PersistentClient(path=CHROMA_DB_PATH)
+    return chromadb.PersistentClient(path=settings.chroma_db_path)
